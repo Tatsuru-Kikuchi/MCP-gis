@@ -1,0 +1,231 @@
+# Tokyo Productivity Agglomeration Analysis Configuration
+
+# Data Collection Settings
+data_collection:
+  # Data directories
+  data_dir: "data"
+  raw_data_dir: "data/raw"
+  processed_data_dir: "data/processed"
+  
+  # Data sources
+  sources:
+    tokyo_statistical_yearbook:
+      base_url: "https://www.toukei.metro.tokyo.lg.jp/tnenkan/"
+      years: [2019, 2020, 2021, 2022, 2023]
+      format: "excel"
+    
+    meti_statistics:
+      base_url: "https://www.meti.go.jp/english/statistics/"
+      datasets: ["industrial_production", "current_production"]
+    
+    e_stat:
+      base_url: "https://www.e-stat.go.jp/en"
+      api_key: null  # Set if using API
+    
+    gsi_spatial:
+      base_url: "https://www.gsi.go.jp/ENGLISH/"
+      data_format: "shapefile"
+  
+  # Sample data generation (for demonstration)
+  generate_sample_data: true
+  sample_data_seed: 42
+
+# Analysis Settings
+analysis:
+  # Output directory
+  results_dir: "results"
+  
+  # Spatial analysis
+  spatial:
+    # Distance calculations
+    distance_metric: "euclidean"  # euclidean, haversine
+    distance_threshold_km: 50
+    
+    # Spatial weights
+    weights_type: "inverse_distance"  # inverse_distance, exponential_decay
+    weights_standardization: "row"  # row, global
+  
+  # Agglomeration metrics
+  agglomeration:
+    # Concentration indices
+    gini_coefficient: true
+    herfindahl_index: true
+    location_quotient: true
+    
+    # Spatial autocorrelation
+    morans_i: true
+    
+    # Market potential calculation
+    market_potential:
+      decay_parameter: 1.0
+      max_distance_km: 100
+  
+  # Regression analysis
+  regression:
+    # Variables to include
+    dependent_variable: "productivity_thousand_yen_per_employee"
+    
+    independent_variables:
+      - "employment_density"
+      - "market_potential"
+      - "diversity_index"
+      - "distance_to_center_km"
+    
+    # Model specifications
+    standardize_variables: true
+    include_fixed_effects: false
+    robust_standard_errors: true
+  
+  # AI impact analysis
+  ai_analysis:
+    # Productivity boost estimation
+    boost_range: [1.05, 1.25]  # 5% to 25% improvement
+    
+    # Investment analysis
+    investment_productivity_correlation: true
+
+# Visualization Settings
+visualization:
+  # Output directory
+  viz_dir: "visualizations"
+  
+  # Figure settings
+  figure:
+    dpi: 300
+    format: "png"
+    style: "seaborn-v0_8"
+    palette: "husl"
+    
+    # Size settings
+    small_figure_size: [10, 8]
+    large_figure_size: [16, 12]
+    dashboard_size: [20, 15]
+  
+  # Map settings
+  map:
+    # Base map
+    map_style: "CartoDB positron"  # OpenStreetMap, CartoDB positron, etc.
+    center_lat: 35.6762
+    center_lon: 139.6503
+    zoom_level: 11
+    
+    # Visualization elements
+    circle_size_multiplier: 2
+    color_scheme:
+      central_wards: "red"
+      outer_wards: "blue"
+      high_productivity: "green"
+      low_productivity: "orange"
+  
+  # Interactive dashboards
+  dashboard:
+    # Plotly settings
+    theme: "plotly_white"
+    height: 800
+    width: 1200
+    
+    # Chart specifications
+    scatter_size_range: [5, 20]
+    opacity: 0.7
+
+# Industry Classification
+industry:
+  # Japan Standard Industrial Classification (JSIC) mapping
+  classification:
+    A: "Agriculture, forestry and fisheries"
+    B: "Mining and quarrying of stone and gravel"
+    C: "Construction"
+    D: "Manufacturing"
+    E: "Electricity, gas, heat supply and water"
+    F: "Information and communications"
+    G: "Transport and postal activities"
+    H: "Wholesale and retail trade"
+    I: "Finance and insurance"
+    J: "Real estate and goods rental and leasing"
+    K: "Scientific research, professional and technical services"
+    L: "Accommodations, eating and drinking services"
+    M: "Living-related and personal services and amusement services"
+    N: "Education, learning support"
+    O: "Medical, health care and welfare"
+    P: "Compound services"
+    Q: "Services, n.e.c."
+    R: "Government"
+    S: "Other services"
+  
+  # High-tech industries (for AI analysis focus)
+  high_tech_industries: ["F", "I", "K", "D"]
+  
+  # Service industries
+  service_industries: ["H", "L", "M", "N", "O", "Q"]
+
+# Tokyo Ward Configuration
+geography:
+  # Tokyo 23 Special Wards
+  wards:
+    central_business_district: ["Chiyoda", "Chuo", "Minato"]
+    sub_centers: ["Shinjuku", "Shibuya", "Shinagawa"]
+    outer_wards: [
+      "Bunkyo", "Taito", "Sumida", "Koto", "Meguro", "Ota", 
+      "Setagaya", "Nakano", "Suginami", "Toshima", "Kita", 
+      "Arakawa", "Itabashi", "Nerima", "Adachi", "Katsushika", "Edogawa"
+    ]
+  
+  # Reference points
+  tokyo_station:
+    latitude: 35.6812
+    longitude: 139.7671
+  
+  # Administrative boundaries
+  include_tama_area: false  # Focus on 23 special wards only
+  include_islands: false
+
+# Logging Configuration
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  
+  # Log files
+  log_dir: "logs"
+  file_format: "analysis_%Y%m%d_%H%M%S.log"
+  
+  # Console output
+  console_output: true
+  
+  # Log format
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+# Performance Settings
+performance:
+  # Parallel processing
+  n_jobs: -1  # Use all available cores
+  
+  # Memory management
+  chunk_size: 10000  # For large datasets
+  
+  # Caching
+  cache_intermediate_results: true
+  cache_dir: "cache"
+
+# AI Adoption Survey Data (Sample Configuration)
+ai_adoption:
+  # Survey parameters
+  survey_year: 2024
+  
+  # Adoption rate ranges by industry type
+  adoption_rates:
+    high_tech: [0.25, 0.40]     # 25-40% adoption
+    finance: [0.20, 0.35]       # 20-35% adoption
+    manufacturing: [0.15, 0.25] # 15-25% adoption
+    services: [0.08, 0.18]      # 8-18% adoption
+    traditional: [0.05, 0.12]   # 5-12% adoption
+  
+  # Productivity impact ranges
+  productivity_impact:
+    high_adopters: [1.15, 1.25]  # 15-25% boost
+    medium_adopters: [1.08, 1.15] # 8-15% boost
+    low_adopters: [1.02, 1.08]   # 2-8% boost
+  
+  # Investment levels (million yen per company)
+  investment_ranges:
+    large_companies: [20, 80]
+    medium_companies: [5, 25]
+    small_companies: [1, 8]
