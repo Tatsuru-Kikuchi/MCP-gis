@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results Explorer - AI Spatial Research</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 3rem 0;
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        .result-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+        }
+        .result-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        .metric-badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: rgba(44, 62, 80, 0.95);">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-city me-2"></i>AI Spatial Research Hub
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="overview.html">Overview</a></li>
+                    <li class="nav-item"><a class="nav-link" href="demographics.html">Demographics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="spatial.html">Spatial</a></li>
+                    <li class="nav-item"><a class="nav-link" href="causal.html">Causal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="predictions.html">Predictions</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="results.html">Results</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="display-5 fw-bold"><i class="fas fa-database me-3"></i>Results Explorer</h1>
+            <p class="lead">Comprehensive analysis results, data export capabilities, and figure gallery</p>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <div class="container my-5">
+        <!-- Summary Statistics -->
+        <div class="row g-4 mb-5">
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fas fa-percentage fa-2x text-primary mb-3"></i>
+                        <h3 class="fw-bold text-primary">4.2-5.2pp</h3>
+                        <p class="text-muted mb-0">AI Causal Impact</p>
+                        <small class="text-muted">Agglomeration Effect</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fas fa-industry fa-2x text-success mb-3"></i>
+                        <h3 class="fw-bold text-success">8.4pp vs 1.2pp</h3>
+                        <p class="text-muted mb-0">Industry Heterogeneity</p>
+                        <small class="text-muted">High-AI vs Low-AI</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fas fa-chart-line fa-2x text-warning mb-3"></i>
+                        <h3 class="fw-bold text-warning">60-80%</h3>
+                        <p class="text-muted mb-0">Aging Offset</p>
+                        <small class="text-muted">2050 Projection</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fas fa-cogs fa-2x text-info mb-3"></i>
+                        <h3 class="fw-bold text-info">5 Methods</h3>
+                        <p class="text-muted mb-0">Causal Identification</p>
+                        <small class="text-muted">Robust Results</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Detailed Results -->
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="fw-bold mb-4"><i class="fas fa-chart-bar me-2 text-primary"></i>Comprehensive Results Summary</h3>
+                        
+                        <div class="result-card">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="fw-bold">Main Treatment Effect</h5>
+                                <span class="metric-badge">4.5pp ±0.5</span>
+                            </div>
+                            <p class="text-muted mb-3">AI implementation increases spatial agglomeration by 4.2-5.2 percentage points across all identification methods.</p>
+                            <div class="row g-2">
+                                <div class="col-md-6"><small class="text-muted"><strong>DiD:</strong> 4.5pp (SE: 0.18, p < 0.01)</small></div>
+                                <div class="col-md-6"><small class="text-muted"><strong>Event Study:</strong> 4.2pp (95% CI: [3.8, 4.6])</small></div>
+                                <div class="col-md-6"><small class="text-muted"><strong>Synthetic Control:</strong> 4.8pp (p < 0.05)</small></div>
+                                <div class="col-md-6"><small class="text-muted"><strong>IV:</strong> 5.2pp (SE: 0.22, p < 0.01)</small></div>
+                            </div>
+                        </div>
+                        
+                        <div class="result-card">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="fw-bold">Industry Heterogeneity</h5>
+                                <span class="metric-badge">7.2pp gap</span>
+                            </div>
+                            <p class="text-muted mb-3">Significant variation in AI effects across industry sectors, with tech-intensive industries showing larger responses.</p>
+                            <div class="row g-2">
+                                <div class="col-md-6"><small class="text-muted"><strong>High-AI Industries:</strong> 8.4pp (p < 0.001)</small></div>
+                                <div class="col-md-6"><small class="text-muted"><strong>Low-AI Industries:</strong> 1.2pp (p = 0.08)</small></div>
+                                <div class="col-md-6"><small class="text-muted"><strong>Finance & Tech:</strong> 9.8pp (p < 0.001)</small></div>
+                                <div class="col-md-6"><small class="text-muted"><strong>Manufacturing:</strong> 3.1pp (p < 0.05)</small></div>
+                            </div>
+                        </div>
+                        
+                        <div class="result-card">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="fw-bold">Temporal Dynamics</h5>
+                                <span class="metric-badge">3-year buildup</span>
+                            </div>
+                            <p class="text-muted mb-3">Effects build gradually over 3-year period following AI implementation, with peak impact in year 3.</p>
+                            <div class="row g-2">
+                                <div class="col-md-6"><small class="text-muted"><strong>Year 1:</strong> 1.2pp (initial adoption)</small></div>
+                                <div class="col-md-6"><small class="text-muted"><strong>Year 2:</strong> 2.8pp (learning effects)</small></div>
+                                <div class="col-md-6"><small class="text-muted"><strong>Year 3:</strong> 4.5pp (full integration)</small></div>
+                                <div class="col-md-6"><small class="text-muted"><strong>Year 4+:</strong> 4.6pp (steady state)</small></div>
+                            </div>
+                        </div>
+                        
+                        <div class="result-card">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="fw-bold">Geographic Variation</h5>
+                                <span class="metric-badge">Core-periphery</span>
+                            </div>
+                            <p class="text-muted mb-3">Effects concentrated in central Tokyo wards with strong network connections and digital infrastructure.</p>
+                            <div class="row g-2">
+                                <div class="col-md-6"><small class="text-muted"><strong>Central Wards:</strong> 6.8pp (Chiyoda, Shibuya, Shinjuku)</small></div>
+                                <div class="col-md-6"><small class="text-muted"><strong>Peripheral Wards:</strong> 2.1pp (outer Tokyo)</small></div>
+                                <div class="col-md-6"><small class="text-muted"><strong>Tech Clusters:</strong> 8.9pp (concentration effects)</small></div>
+                                <div class="col-md-6"><small class="text-muted"><strong>Traditional Areas:</strong> 1.8pp (slower adoption)</small></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="fw-bold mb-3"><i class="fas fa-download me-2 text-primary"></i>Download Resources</h5>
+                        <div class="d-grid gap-2">
+                            <a href="https://github.com/Tatsuru-Kikuchi/MCP-gis/tree/main/results" target="_blank" class="btn btn-outline-primary">
+                                <i class="fas fa-table me-2"></i>Results Tables (CSV)
+                            </a>
+                            <a href="https://github.com/Tatsuru-Kikuchi/MCP-gis/tree/main/visualizations" target="_blank" class="btn btn-outline-success">
+                                <i class="fas fa-chart-bar me-2"></i>All Figures (PNG/PDF)
+                            </a>
+                            <a href="https://github.com/Tatsuru-Kikuchi/MCP-gis/tree/main/data" target="_blank" class="btn btn-outline-info">
+                                <i class="fas fa-database me-2"></i>Raw Data (ZIP)
+                            </a>
+                            <a href="https://github.com/Tatsuru-Kikuchi/MCP-gis" target="_blank" class="btn btn-outline-dark">
+                                <i class="fab fa-github me-2"></i>Complete Repository
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="fw-bold mb-3"><i class="fas fa-shield-alt me-2 text-success"></i>Robustness Tests</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <strong>Placebo Tests:</strong> No effects in non-treatment periods
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <strong>Sensitivity Analysis:</strong> Results stable across specifications
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <strong>Alternative Controls:</strong> Consistent with different control groups
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <strong>Subsample Analysis:</strong> Effects hold across subsamples
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h6 class="fw-bold mb-3">Publication Status</h6>
+                        <div class="p-3 bg-warning text-dark rounded">
+                            <i class="fas fa-clock fa-2x mb-2"></i>
+                            <p class="mb-0 fw-bold">Under Review</p>
+                            <small>Journal of Urban Economics</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-5">
+            <p class="text-muted">Interactive results explorer with filtering and visualization tools coming soon.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="https://github.com/Tatsuru-Kikuchi/MCP-gis" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-github me-2"></i>View Full Repository
+                </a>
+                <a href="index.html" class="btn btn-outline-primary">
+                    <i class="fas fa-home me-2"></i>Back to Home
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
