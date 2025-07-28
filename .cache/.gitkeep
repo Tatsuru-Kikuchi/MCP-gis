@@ -1,0 +1,6 @@
+# Performance Cache
+
+Cached data for faster execution:
+- sample_data.pkl
+- processed_datasets.pkl
+- model_cache/

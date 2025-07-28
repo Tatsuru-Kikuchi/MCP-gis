@@ -1,0 +1,18 @@
+# Manuscript Figures - MAIN LOCATION
+
+This is the primary location for publication-ready figures.
+
+Generated figures:
+- fig1_demographic_effects.png
+- fig2_event_study.png  
+- fig3_causal_effects.png
+- fig4_heterogeneous_effects.png
+- fig5_scenario_predictions.png
+- fig6_theoretical_framework.png
+- fig7_ai_mechanisms.png
+- fig8_network_analysis.png
+
+To generate all figures:
+```bash
+python script/complete_manuscript_figures.py
+```

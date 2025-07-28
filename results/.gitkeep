@@ -1,2 +1,7 @@
-# This file ensures the results directory is tracked by git
-# Result files are generated during analysis
+# Analysis Results
+
+Structured results from all analyses:
+- theoretical_results.json
+- causal_analysis_results.json  
+- predictions_results.json
+- robustness_test_results.json

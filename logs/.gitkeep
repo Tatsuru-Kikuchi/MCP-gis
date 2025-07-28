@@ -1,2 +1,6 @@
-# This file ensures the logs directory is tracked by git
-# Log files are generated during analysis runs
+# Execution Logs
+
+Detailed logs from analysis execution:
+- analysis_YYYYMMDD_HHMMSS.log
+- error_logs/
+- performance_metrics.json
