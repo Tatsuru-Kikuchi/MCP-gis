@@ -21,7 +21,7 @@ seaborn==0.13.0
 
 # Web Framework Support
 flask==3.0.0
-werkzeug==3.0.1
+werkzeug==3.0.6
 
 # Utilities
 python-dateutil==2.8.2
