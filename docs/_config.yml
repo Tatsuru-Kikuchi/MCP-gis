@@ -1,25 +1,20 @@
-# GitHub Pages Configuration for MCP-GIS Research Hub
-title: "AI-Driven Spatial Distribution Research Hub"
-description: "Interactive dashboards and comprehensive analysis of AI implementation effects on spatial economic patterns in Japan's aging society"
+# Simple GitHub Pages Configuration
+title: "AI-Driven Spatial Distribution Research"
+description: "Research presentation and key findings overview"
 url: "https://tatsuru-kikuchi.github.io"
 baseurl: "/MCP-gis"
 
-# Build settings
+# Keep it simple for static HTML
 markdown: kramdown
 highlighter: rouge
 
-# Exclude files from processing
+# Exclude everything except docs content
 exclude:
   - README.md
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor
-  - .sass-cache
-  - .jekyll-cache
   - "*.py"
   - "*.txt"
   - "*.yml"
+  - "*.json"
   - data/
   - logs/
   - results/
@@ -31,18 +26,7 @@ exclude:
   - visualization/
   - visualizations/
   - config/
+  - .cache/
 
-# Include only docs content
-include:
-  - docs/
-
-# SEO settings
+# Basic SEO
 author: "Tatsuru Kikuchi"
-social:
-  - https://github.com/Tatsuru-Kikuchi
-
-# Custom variables
-research:
-  title: "AI-Driven Spatial Distribution Analysis"
-  subtitle: "Tokyo Metropolitan Area Study"
-  keywords: "AI, spatial economics, aging society, causal inference"
