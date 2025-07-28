@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Driven Spatial Distribution Research Hub</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --success-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --warning-gradient: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            --dark-gradient: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+        
+        .hero-section {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 4rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="%23fff" stop-opacity=".1"/><stop offset="100%" stop-color="%23fff" stop-opacity="0"/></radialGradient></defs><circle cx="200" cy="200" r="100" fill="url(%23a)"/><circle cx="800" cy="300" r="150" fill="url(%23a)"/><circle cx="400" cy="700" r="120" fill="url(%23a)"/></svg>') center/cover;
+            opacity: 0.3;
+        }
+        
+        .dashboard-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .dashboard-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--primary-gradient);
+        }
+        
+        .dashboard-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.5rem;
+            color: white;
+        }
+        
+        .stats-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .stats-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .btn-gradient {
+            background: var(--primary-gradient);
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-gradient:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            color: white;
+        }
+        
+        .methodology-badge {
+            background: var(--success-gradient);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin: 0.2rem;
+            display: inline-block;
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .research-timeline {
+            position: relative;
+            padding: 2rem 0;
+        }
+        
+        .timeline-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            opacity: 0;
+            transform: translateX(-50px);
+            animation: slideIn 0.6s ease forwards;
+        }
+        
+        .timeline-item:nth-child(even) {
+            flex-direction: row-reverse;
+            transform: translateX(50px);
+        }
+        
+        @keyframes slideIn {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .floating-elements {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .floating-circle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(102, 126, 234, 0.1);
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating Background Elements -->
+    <div class="floating-elements">
+        <div class="floating-circle" style="width: 100px; height: 100px; top: 10%; left: 10%; animation-delay: 0s;"></div>
+        <div class="floating-circle" style="width: 150px; height: 150px; top: 20%; right: 10%; animation-delay: 2s;"></div>
+        <div class="floating-circle" style="width: 80px; height: 80px; bottom: 20%; left: 20%; animation-delay: 4s;"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: rgba(44, 62, 80, 0.95); backdrop-filter: blur(10px);">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="fas fa-city me-2"></i>AI Spatial Research Hub
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#overview">Overview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#dashboards">Dashboards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#methodology">Methodology</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#results">Results</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/Tatsuru-Kikuchi/MCP-gis" target="_blank">
+                            <i class="fab fa-github me-1"></i>GitHub
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="overview">
+        <div class="container position-relative">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4">
+                        <i class="fas fa-robot me-3"></i>
+                        AI-Driven Spatial Distribution Research Hub
+                    </h1>
+                    <p class="lead mb-4">
+                        Comprehensive research platform exploring the causal effects of AI implementation on spatial economic patterns in Japan's aging society through interactive dashboards and rigorous empirical analysis.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+                        <span class="methodology-badge">
+                            <i class="fas fa-chart-line me-1"></i>5 Causal Methods
+                        </span>
+                        <span class="methodology-badge">
+                            <i class="fas fa-map me-1"></i>Tokyo 23 Wards
+                        </span>
+                        <span class="methodology-badge">
+                            <i class="fas fa-calendar me-1"></i>2000-2024 Data
+                        </span>
+                        <span class="methodology-badge">
+                            <i class="fas fa-crystal-ball me-1"></i>2050 Projections
+                        </span>
+                    </div>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#dashboards" class="btn-gradient pulse">
+                            <i class="fas fa-chart-bar me-2"></i>Explore Dashboards
+                        </a>
+                        <a href="results.html" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-download me-2"></i>View Results
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="position-relative">
+                        <i class="fas fa-city" style="font-size: 8rem; opacity: 0.8;"></i>
+                        <div class="position-absolute top-50 start-50 translate-middle">
+                            <i class="fas fa-brain" style="font-size: 3rem; color: #fee140;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Findings Stats -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3 col-sm-6">
+                    <div class="stats-card">
+                        <div class="feature-icon" style="background: var(--success-gradient);">
+                            <i class="fas fa-percentage"></i>
+                        </div>
+                        <h3 class="h4 fw-bold text-primary">4.2-5.2pp</h3>
+                        <p class="text-muted mb-0">AI Causal Impact on Spatial Agglomeration</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stats-card">
+                        <div class="feature-icon" style="background: var(--warning-gradient);">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h3 class="h4 fw-bold text-primary">8.4pp vs 1.2pp</h3>
+                        <p class="text-muted mb-0">High-AI vs Low-AI Industries</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stats-card">
+                        <div class="feature-icon" style="background: var(--dark-gradient);">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="h4 fw-bold text-primary">60-80%</h3>
+                        <p class="text-muted mb-0">Potential Offset of Aging Effects</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stats-card">
+                        <div class="feature-icon" style="background: var(--primary-gradient);">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3 class="h4 fw-bold text-primary">5 Methods</h3>
+                        <p class="text-muted mb-0">Rigorous Causal Identification</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Dashboards Section -->
+    <section class="py-5 bg-light" id="dashboards">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-3">
+                    <i class="fas fa-chart-bar me-3 text-primary"></i>
+                    Interactive Research Dashboards
+                </h2>
+                <p class="lead text-muted">Explore comprehensive research findings through interactive visualizations and analytical tools</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="dashboard-card h-100 p-4">
+                        <div class="feature-icon" style="background: var(--primary-gradient);">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Research Overview</h4>
+                        <p class="text-muted mb-4">Executive summary with key findings, interactive KPIs, and comprehensive research highlights</p>
+                        <div class="mb-3">
+                            <small class="text-muted"><i class="fas fa-chart-pie me-1"></i>Summary Charts</small><br>
+                            <small class="text-muted"><i class="fas fa-tachometer-alt me-1"></i>Interactive KPIs</small><br>
+                            <small class="text-muted"><i class="fas fa-lightbulb me-1"></i>Key Insights</small>
+                        </div>
+                        <a href="overview.html" class="btn-gradient w-100 text-center">
+                            <i class="fas fa-play me-2"></i>Launch Overview
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="dashboard-card h-100 p-4">
+                        <div class="feature-icon" style="background: var(--success-gradient);">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Demographic Analysis</h4>
+                        <p class="text-muted mb-4">Population aging trends, workforce dynamics, and demographic transitions with interactive maps</p>
+                        <div class="mb-3">
+                            <small class="text-muted"><i class="fas fa-clock me-1"></i>Timeline Sliders</small><br>
+                            <small class="text-muted"><i class="fas fa-map-marked me-1"></i>Ward-level Maps</small><br>
+                            <small class="text-muted"><i class="fas fa-users me-1"></i>Population Trends</small>
+                        </div>
+                        <a href="demographics.html" class="btn-gradient w-100 text-center">
+                            <i class="fas fa-play me-2"></i>Launch Demographics
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="dashboard-card h-100 p-4">
+                        <div class="feature-icon" style="background: var(--warning-gradient);">
+                            <i class="fas fa-map"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Spatial Patterns</h4>
+                        <p class="text-muted mb-4">Agglomeration analysis, concentration patterns, and spatial distribution dynamics</p>
+                        <div class="mb-3">
+                            <small class="text-muted"><i class="fas fa-layer-group me-1"></i>Interactive Maps</small><br>
+                            <small class="text-muted"><i class="fas fa-filter me-1"></i>Industry Filters</small><br>
+                            <small class="text-muted"><i class="fas fa-bullseye me-1"></i>Concentration Index</small>
+                        </div>
+                        <a href="spatial.html" class="btn-gradient w-100 text-center">
+                            <i class="fas fa-play me-2"></i>Launch Spatial
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="dashboard-card h-100 p-4">
+                        <div class="feature-icon" style="background: var(--dark-gradient);">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Causal Inference</h4>
+                        <p class="text-muted mb-4">Treatment effects, robustness tests, and comprehensive causal identification methods</p>
+                        <div class="mb-3">
+                            <small class="text-muted"><i class="fas fa-balance-scale me-1"></i>Method Comparison</small><br>
+                            <small class="text-muted"><i class="fas fa-chart-area me-1"></i>Event Studies</small><br>
+                            <small class="text-muted"><i class="fas fa-shield-alt me-1"></i>Robustness Tests</small>
+                        </div>
+                        <a href="causal.html" class="btn-gradient w-100 text-center">
+                            <i class="fas fa-play me-2"></i>Launch Causal
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="dashboard-card h-100 p-4">
+                        <div class="feature-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <i class="fas fa-crystal-ball"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Future Projections</h4>
+                        <p class="text-muted mb-4">Long-term scenarios (2024-2050), policy simulations, and predictive modeling</p>
+                        <div class="mb-3">
+                            <small class="text-muted"><i class="fas fa-sliders-h me-1"></i>Scenario Builder</small><br>
+                            <small class="text-muted"><i class="fas fa-cogs me-1"></i>Policy Simulator</small><br>
+                            <small class="text-muted"><i class="fas fa-rocket me-1"></i>ML Predictions</small>
+                        </div>
+                        <a href="predictions.html" class="btn-gradient w-100 text-center">
+                            <i class="fas fa-play me-2"></i>Launch Predictions
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="dashboard-card h-100 p-4">
+                        <div class="feature-icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Results Explorer</h4>
+                        <p class="text-muted mb-4">Complete analysis results, data export capabilities, and comprehensive figure gallery</p>
+                        <div class="mb-3">
+                            <small class="text-muted"><i class="fas fa-download me-1"></i>Data Export</small><br>
+                            <small class="text-muted"><i class="fas fa-images me-1"></i>Figure Gallery</small><br>
+                            <small class="text-muted"><i class="fas fa-table me-1"></i>Results Tables</small>
+                        </div>
+                        <a href="results.html" class="btn-gradient w-100 text-center">
+                            <i class="fas fa-play me-2"></i>Launch Results
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section class="py-5" id="methodology">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-3">
+                    <i class="fas fa-cogs me-3 text-primary"></i>
+                    Research Methodology
+                </h2>
+                <p class="lead text-muted">Rigorous causal identification through multiple empirical approaches</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="dashboard-card h-100 p-4">
+                        <h4 class="fw-bold mb-3">
+                            <i class="fas fa-balance-scale me-2 text-primary"></i>
+                            Causal Identification Methods
+                        </h4>
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <div class="d-flex align-items-center p-3 rounded" style="background: rgba(102, 126, 234, 0.1);">
+                                    <i class="fas fa-arrow-right me-3 text-primary"></i>
+                                    <div>
+                                        <strong>Difference-in-Differences</strong><br>
+                                        <small class="text-muted">0.045 treatment effect (p=0.005)</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex align-items-center p-3 rounded" style="background: rgba(75, 192, 192, 0.1);">
+                                    <i class="fas fa-chart-area me-3 text-info"></i>
+                                    <div>
+                                        <strong>Event Study Analysis</strong><br>
+                                        <small class="text-muted">Dynamic effects with parallel trends validation</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex align-items-center p-3 rounded" style="background: rgba(255, 99, 132, 0.1);">
+                                    <i class="fas fa-clone me-3 text-danger"></i>
+                                    <div>
+                                        <strong>Synthetic Control</strong><br>
+                                        <small class="text-muted">Counterfactual construction for causal inference</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex align-items-center p-3 rounded" style="background: rgba(255, 206, 86, 0.1);">
+                                    <i class="fas fa-tools me-3 text-warning"></i>
+                                    <div>
+                                        <strong>Instrumental Variables</strong><br>
+                                        <small class="text-muted">Addressing endogeneity concerns</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex align-items-center p-3 rounded" style="background: rgba(153, 102, 255, 0.1);">
+                                    <i class="fas fa-bullseye me-3 text-purple"></i>
+                                    <div>
+                                        <strong>Propensity Score Matching</strong><br>
+                                        <small class="text-muted">Controlling for selection bias</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="dashboard-card h-100 p-4">
+                        <h4 class="fw-bold mb-3">
+                            <i class="fas fa-brain me-2 text-primary"></i>
+                            Theoretical Framework
+                        </h4>
+                        <p class="text-muted mb-3">First comprehensive integration of AI-specific mechanisms into New Economic Geography theory:</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <i class="fas fa-network-wired me-2 text-primary"></i>
+                                <strong>Algorithmic Learning Spillovers</strong><br>
+                                <small class="text-muted ms-4">Knowledge transmission through AI systems</small>
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-server me-2 text-info"></i>
+                                <strong>Digital Infrastructure Returns</strong><br>
+                                <small class="text-muted ms-4">Increasing returns to digital investment</small>
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-globe me-2 text-success"></i>
+                                <strong>Virtual Agglomeration Effects</strong><br>
+                                <small class="text-muted ms-4">Remote collaboration reducing distance constraints</small>
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-handshake me-2 text-warning"></i>
+                                <strong>AI-Human Complementarity</strong><br>
+                                <small class="text-muted ms-4">Productivity gains from human-AI collaboration</small>
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-share-alt me-2 text-danger"></i>
+                                <strong>Network Externalities</strong><br>
+                                <small class="text-muted ms-4">Multiplicative benefits from AI adoption networks</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Preview -->
+    <section class="py-5 bg-light" id="results">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-3">
+                    <i class="fas fa-chart-line me-3 text-primary"></i>
+                    Key Research Findings
+                </h2>
+                <p class="lead text-muted">Evidence-based insights on AI's spatial distribution effects</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center">
+                        <div class="feature-icon mx-auto mb-3" style="background: var(--success-gradient);">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3 class="h4 fw-bold text-primary">AI Causal Impact</h3>
+                        <p class="text-muted">4.2-5.2 percentage points increase in agglomeration patterns</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center">
+                        <div class="feature-icon mx-auto mb-3" style="background: var(--warning-gradient);">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h3 class="h4 fw-bold text-primary">Industry Heterogeneity</h3>
+                        <p class="text-muted">8.4pp (high-AI) vs 1.2pp (low-AI) industries - targeted policy needed</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center">
+                        <div class="feature-icon mx-auto mb-3" style="background: var(--dark-gradient);">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="h4 fw-bold text-primary">Long-term Potential</h3>
+                        <p class="text-muted">60-80% offset of aging effects - strategic AI adoption crucial</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center">
+                        <div class="feature-icon mx-auto mb-3" style="background: var(--primary-gradient);">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3 class="h4 fw-bold text-primary">Policy Effectiveness</h3>
+                        <p class="text-muted">15-30% improvement possible - evidence-based interventions work</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="results.html" class="btn-gradient me-3">
+                    <i class="fas fa-chart-bar me-2"></i>Explore All Results
+                </a>
+                <a href="https://github.com/Tatsuru-Kikuchi/MCP-gis" class="btn btn-outline-primary" target="_blank">
+                    <i class="fab fa-github me-2"></i>View Code
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-city me-2"></i>
+                        AI-Driven Spatial Distribution Research Hub
+                    </h5>
+                    <p class="text-muted mb-3">
+                        Comprehensive research platform exploring AI implementation effects on spatial economic patterns in Japan's aging society.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="https://github.com/Tatsuru-Kikuchi/MCP-gis" class="text-white" target="_blank">
+                            <i class="fab fa-github fa-2x"></i>
+                        </a>
+                        <a href="#" class="text-white">
+                            <i class="fas fa-envelope fa-2x"></i>
+                        </a>
+                        <a href="#" class="text-white">
+                            <i class="fab fa-linkedin fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Quick Access</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="overview.html" class="text-muted text-decoration-none">Research Overview</a></li>
+                        <li class="mb-2"><a href="demographics.html" class="text-muted text-decoration-none">Demographics</a></li>
+                        <li class="mb-2"><a href="spatial.html" class="text-muted text-decoration-none">Spatial Analysis</a></li>
+                        <li class="mb-2"><a href="causal.html" class="text-muted text-decoration-none">Causal Inference</a></li>
+                        <li class="mb-2"><a href="predictions.html" class="text-muted text-decoration-none">Predictions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Resources</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="results.html" class="text-muted text-decoration-none">Results Explorer</a></li>
+                        <li class="mb-2"><a href="https://github.com/Tatsuru-Kikuchi/MCP-gis" class="text-muted text-decoration-none" target="_blank">GitHub Repository</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Documentation</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">API Reference</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-muted mb-0">&copy; 2025 Tatsuru Kikuchi. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="text-muted mb-0">
+                        <i class="fas fa-graduation-cap me-1"></i>
+                        Paper: Under Review at Journal of Urban Economics
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add animation delay to timeline items
+        document.querySelectorAll('.timeline-item').forEach((item, index) => {
+            item.style.animationDelay = `${index * 0.2}s`;
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe cards for scroll animations
+        document.querySelectorAll('.dashboard-card, .stats-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'all 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
