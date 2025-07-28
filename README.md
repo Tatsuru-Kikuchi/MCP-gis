@@ -1,316 +1,303 @@
-# Tokyo Productivity Agglomeration Analysis: Dynamic + Causal Framework 🏙️⚡🔬
+# AI-Driven Spatial Distribution Research Hub 🏙️🤖📊
 
-> **Revolutionary comprehensive framework combining dynamic agglomeration analysis with rigorous causal inference methodology to study AI implementation effects on spatial economic patterns in Japan's aging society**
+> **Comprehensive Research Platform: Interactive Dashboards, Theoretical Framework, and Empirical Analysis of AI Implementation Effects on Spatial Economic Patterns in Japan's Aging Society**
 
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
-[![Dynamic](https://img.shields.io/badge/Analysis-Dynamic%20Temporal-red.svg)]()
-[![Causal](https://img.shields.io/badge/Inference-Event%20Study-green.svg)]()
-[![AI](https://img.shields.io/badge/ML-Predictive%20Modeling-orange.svg)]()
+[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://python.org)
+[![Dash](https://img.shields.io/badge/Dashboard-Interactive-brightgreen.svg)](https://plotly.com/dash/)
+[![JUE](https://img.shields.io/badge/Journal-Under%20Review-orange.svg)](https://www.sciencedirect.com/journal/journal-of-urban-economics)
 [![GitHub Stars](https://img.shields.io/github/stars/Tatsuru-Kikuchi/MCP-gis.svg)](https://github.com/Tatsuru-Kikuchi/MCP-gis/stargazers)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-## 🌟 **Revolutionary Framework: Three Analytical Layers**
+---
 
-### **🏗️ Layer 1: Traditional Static Analysis**
-- Cross-sectional agglomeration patterns
-- Spatial concentration measures  
-- Industry-location associations
+## 🌟 **Interactive Research Dashboards**
 
-### **⏰ Layer 2: Dynamic Temporal Analysis** 
-- Time-varying agglomeration coefficients
-- Demographic transition effects (Japan's aging society)
-- AI adoption trajectory modeling
-- 25-year predictive scenarios with ML
+**🚀 [Launch Main Research Dashboard](https://tatsuru-kikuchi.github.io/MCP-gis/dashboard/)** - Comprehensive interactive exploration of all research findings
 
-### **🎯 Layer 3: Causal Inference Analysis**
-- Event study methodology
-- Five identification strategies (DiD, Synthetic Control, IV, PSM, Event Study)
-- Comprehensive robustness testing
-- Policy evaluation tools
+| 📊 Dashboard | 🎯 Purpose | 🔗 Access | 📱 Features |
+|-------------|-----------|---------|------------|
+| **[🏠 Research Overview](https://tatsuru-kikuchi.github.io/MCP-gis/overview/)** | Executive summary and key findings | [Launch →](https://tatsuru-kikuchi.github.io/MCP-gis/overview/) | Interactive KPIs, Summary charts |
+| **[👥 Demographic Analysis](https://tatsuru-kikuchi.github.io/MCP-gis/demographics/)** | Population aging and workforce trends | [Launch →](https://tatsuru-kikuchi.github.io/MCP-gis/demographics/) | Timeline sliders, Ward-level maps |
+| **[🏢 Spatial Patterns](https://tatsuru-kikuchi.github.io/MCP-gis/spatial/)** | Agglomeration and concentration analysis | [Launch →](https://tatsuru-kikuchi.github.io/MCP-gis/spatial/) | Interactive maps, Industry filters |
+| **[🎯 Causal Inference](https://tatsuru-kikuchi.github.io/MCP-gis/causal/)** | Treatment effects and robustness tests | [Launch →](https://tatsuru-kikuchi.github.io/MCP-gis/causal/) | Method comparison, Event studies |
+| **[🔮 Future Projections](https://tatsuru-kikuchi.github.io/MCP-gis/predictions/)** | Long-term scenarios (2024-2050) | [Launch →](https://tatsuru-kikuchi.github.io/MCP-gis/predictions/) | Scenario builder, Policy simulator |
+| **[📊 Results Explorer](https://tatsuru-kikuchi.github.io/MCP-gis/results/)** | Complete analysis results | [Launch →](https://tatsuru-kikuchi.github.io/MCP-gis/results/) | Data export, Figure gallery |
 
-## 🎯 **Core Research Innovation**
+---
 
-### **The Challenge: Japan's Aging Society + AI Transformation**
-Japan faces unprecedented demographic and technological changes:
-- **Super-aging society**: >28% elderly by 2025
-- **Workforce decline**: Young workers declining 2% annually
-- **AI acceleration**: Technology adoption reshaping spatial patterns
-- **Policy urgency**: Need evidence-based interventions
+## 🎯 **Research Innovation & Contributions**
 
-### **Our Solution: Dynamic + Causal Framework**
-**Research Question**: *How does AI implementation causally affect productivity agglomeration patterns in Tokyo, and what are the long-term implications for Japan's aging society?*
+### **🔬 Novel Theoretical Framework**
+First comprehensive integration of **AI-specific mechanisms** into New Economic Geography theory:
+- **Algorithmic Learning Spillovers** - Knowledge transmission through AI systems
+- **Digital Infrastructure Returns** - Increasing returns to digital investment
+- **Virtual Agglomeration Effects** - Remote collaboration reducing distance constraints
+- **AI-Human Complementarity** - Productivity gains from human-AI collaboration  
+- **Network Externalities** - Multiplicative benefits from AI adoption networks
 
-## 🚀 **Quick Start**
+### **📈 Rigorous Empirical Validation**
+**Five causal identification methods** providing robust evidence:
+- **Difference-in-Differences**: 0.045 treatment effect (p=0.005)
+- **Event Study Analysis**: Dynamic effects with parallel trends validation
+- **Synthetic Control**: Counterfactual construction for causal inference
+- **Instrumental Variables**: Addressing endogeneity concerns
+- **Propensity Score Matching**: Controlling for selection bias
 
-### **Option 1: Complete Integrated Analysis**
+### **🔮 Predictive Analytics**
+**25-year projections (2024-2050)** across multiple scenarios:
+- **Machine learning ensemble** with R² = 0.76-0.89
+- **27 scenario combinations** (AI adoption × Policy × Demographics)
+- **Policy intervention simulations** for strategic planning
+
+---
+
+## 🏆 **Key Research Findings**
+
+<div align="center">
+
+| 💡 **Finding** | 📊 **Evidence** | 🌍 **Implication** |
+|:-------------:|:-------------:|:-----------------:|
+| **AI Causal Impact** | 4.2-5.2 pp ↑ agglomeration | Significant spatial concentration |
+| **Industry Heterogeneity** | 8.4pp (high-AI) vs 1.2pp (low-AI) | Targeted policy needed |
+| **Long-term Potential** | 60-80% offset of aging effects | Strategic AI adoption crucial |
+| **Policy Effectiveness** | 15-30% improvement possible | Evidence-based interventions work |
+
+</div>
+
+---
+
+## 🚀 **Quick Start Options**
+
+### **🌐 Option 1: Interactive Dashboards (Recommended)**
 ```bash
-# Clone the repository
+# No installation required - web-based dashboards
+🔗 Visit: https://tatsuru-kikuchi.github.io/MCP-gis/dashboard/
+📱 Mobile-friendly interface
+🎮 Interactive exploration of all findings
+💾 Export capabilities for data and figures
+```
+
+### **🖥️ Option 2: Local Analysis**
+```bash
+# Clone and run locally
 git clone https://github.com/Tatsuru-Kikuchi/MCP-gis.git
 cd MCP-gis
 
 # Install dependencies
 pip install -r requirements.txt
-pip install -r requirements_dynamic.txt  # For dynamic analysis
-pip install -r requirements_causal.txt   # For causal analysis
 
-# Run complete framework (Dynamic + Causal)
-python main_integrated_analysis.py
+# Launch local dashboard
+python web_dashboard/app.py
+
+# Or run specific analysis
+python scripts/run_complete_analysis.py
 ```
 
-### **Option 2: Individual Components**
+### **🐳 Option 3: Docker Deployment**
 ```bash
-# Traditional static analysis
-python main_analysis.py
+# One-command deployment
+docker-compose up -d
 
-# Dynamic temporal analysis  
-python main_dynamic_analysis.py
-
-# Causal inference analysis
-python main_causal_analysis.py
+# Access at http://localhost:8050
+# Includes all analysis tools and dashboards
 ```
 
-### **Option 3: Programmatic Usage**
-```python
-# Dynamic Analysis
-from dynamic_analysis.demographic_data_collector import DemographicDataCollector
-from dynamic_analysis.ai_predictive_simulator import AIPredictiveSimulator
+---
 
-collector = DemographicDataCollector()
-demographic_data = collector.run_full_demographic_collection()
-
-simulator = AIPredictiveSimulator()
-predictions = simulator.run_full_prediction_analysis()
-
-# Causal Analysis
-from causal_analysis.ai_implementation_event_study import AIImplementationEventStudy
-from causal_analysis.robustness_tests import RobustnessTests
-
-event_study = AIImplementationEventStudy()
-causal_results = event_study.run_comprehensive_causal_analysis()
-
-robustness = RobustnessTests()
-validation = robustness.run_comprehensive_robustness_tests()
-```
-
-## 📁 **Comprehensive Framework Structure**
+## 📁 **Enhanced Repository Structure**
 
 ```
 MCP-gis/
-├── 📂 Traditional Static Analysis
-│   ├── 🐍 main_analysis.py                           # Original agglomeration analysis
-│   ├── 📂 data_collection/                           # Tokyo economic data
-│   ├── 📂 analysis/                                  # Agglomeration calculations
-│   └── 📂 visualization/                             # Static visualizations
+├── 🌐 web_dashboard/                    # Interactive Dashboards
+│   ├── 📱 app.py                       # Main dashboard application
+│   ├── 🎨 assets/                      # CSS, JS, images
+│   ├── 📊 components/                   # Dashboard components
+│   ├── 🔄 callbacks/                   # Interactive callbacks
+│   └── 📁 pages/                       # Individual dashboard pages
 │
-├── 📂 Dynamic Temporal Analysis  
-│   ├── 🐍 main_dynamic_analysis.py                   # Dynamic orchestration
-│   ├── 📂 dynamic_analysis/
-│   │   ├── 🔢 demographic_data_collector.py          # 24-year demographic evolution
-│   │   ├── ⏰ temporal_agglomeration_analyzer.py     # Time-varying coefficients
-│   │   ├── 🤖 ai_predictive_simulator.py            # ML prediction engine
-│   │   └── 📊 scenario_visualizer.py                # Interactive dashboards
-│   └── 📖 README_DYNAMIC.md                         # Dynamic analysis guide
+├── 📂 src/                             # Core Analysis Code
+│   ├── 🔬 analysis/                    # Analysis modules
+│   │   ├── 🏙️ spatial_analysis.py     # Spatial concentration analysis
+│   │   ├── 👥 demographic_analysis.py  # Population trend analysis
+│   │   ├── 🎯 causal_inference.py     # Causal identification methods
+│   │   └── 🔮 predictive_modeling.py  # ML prediction models
+│   │
+│   ├── 📊 data/                        # Data processing
+│   │   ├── 🗂️ collectors.py           # Data collection utilities
+│   │   ├── 🔧 processors.py           # Data cleaning/processing
+│   │   └── ✅ validators.py           # Data validation
+│   │
+│   ├── 📈 visualization/               # Visualization modules
+│   │   ├── 📊 static_plots.py         # Static matplotlib plots
+│   │   ├── 🌐 interactive_plots.py    # Plotly interactive plots
+│   │   └── 🎛️ dashboard_components.py # Dash components
+│   │
+│   └── 🛠️ utils/                      # Utility functions
+│       ├── ⚙️ config.py               # Configuration management
+│       ├── 📝 logger.py               # Logging utilities
+│       └── 🔧 helpers.py              # General helper functions
 │
-├── 📂 Causal Inference Analysis
-│   ├── 🐍 main_causal_analysis.py                   # Causal orchestration  
-│   ├── 📂 causal_analysis/
-│   │   ├── 🎯 ai_implementation_event_study.py      # 5-method causal analysis
-│   │   ├── 🔬 robustness_tests.py                   # Comprehensive validation
-│   │   └── 📊 causal_visualization.py               # Causal visualizations
-│   └── 📖 README_CAUSAL.md                          # Causal analysis guide
+├── 📊 results/                         # Analysis Results
+│   ├── 🖼️ figures/                    # Generated figures
+│   │   ├── 📄 manuscript/             # Publication-ready figures
+│   │   ├── 🔍 exploratory/            # Exploratory analysis
+│   │   └── 🌐 interactive/            # Interactive visualizations
+│   ├── 📋 tables/                     # Generated tables
+│   ├── 🤖 models/                     # Saved ML models
+│   └── 📑 reports/                    # Analysis reports
 │
-├── 📂 Integration & Documentation
-│   ├── 🔗 INTEGRATION_GUIDE.md                      # Dynamic + Causal integration
-│   ├── 📋 DYNAMIC_ANALYSIS_REPORT.md                # Dynamic findings
-│   ├── 📋 CAUSAL_ANALYSIS_REPORT.md                 # Causal findings
-│   └── 📄 academic_paper.tex                        # LaTeX academic paper
+├── 📓 notebooks/                       # Jupyter Notebooks
+│   ├── 📊 01_exploratory_analysis.ipynb
+│   ├── 👥 02_demographic_trends.ipynb
+│   ├── 🏙️ 03_spatial_analysis.ipynb
+│   ├── 🎯 04_causal_inference.ipynb
+│   ├── 🔮 05_predictive_modeling.ipynb
+│   └── 📋 06_results_synthesis.ipynb
 │
-└── 📂 Results & Visualizations
-    ├── 📊 results/temporal/                          # Dynamic analysis results
-    ├── 📊 results/causal_analysis/                   # Event study results  
-    ├── 📊 results/robustness/                        # Validation tests
-    ├── 🎨 visualizations/dynamic/                    # Dynamic visualizations
-    └── 🎨 visualizations/causal/                     # Causal visualizations
+├── 📄 docs/                           # Documentation
+│   ├── 📖 user_guide.md              # User guide
+│   ├── 🛠️ developer_guide.md         # Developer documentation
+│   ├── 🚀 deployment_guide.md        # Deployment instructions
+│   └── 📚 api_reference.md           # API documentation
+│
+└── 🧪 tests/                          # Test Suite
+    ├── 🔬 test_analysis.py           # Analysis module tests
+    ├── 📊 test_visualization.py      # Visualization tests
+    └── 🌐 test_dashboard.py          # Dashboard tests
 ```
 
-## 🎯 **Key Breakthrough Findings**
+---
 
-### **1. Causal Evidence of AI Impact** 🔬
-| Method | Treatment Effect | P-value | Economic Magnitude |
-|--------|------------------|---------|-------------------|
-| **Difference-in-Differences** | **0.045** | **0.005** | 12% ↑ concentration |
-| Event Study Regression | 0.042 | 0.019 | Sustained 3-5 years |
-| Synthetic Control | 0.038 | 0.071 | Counterfactual validation |
-| Instrumental Variables | 0.052 | 0.030 | Addresses endogeneity |
-| Propensity Score Matching | 0.041 | 0.031 | Selection bias control |
+## 🎓 **Academic Impact & Recognition**
 
-### **2. Dynamic Treatment Effects Over Time** ⏰
-```
-Years Relative to AI Implementation:
-  -3    -2    -1     0    +1    +2    +3    +4    +5
-0.008 0.003 0.000 0.018 0.035 0.058 0.045 0.041 0.038
+### **📚 Publication Status**
+- **Journal**: Journal of Urban Economics (Under Review)
+- **Preprint**: Available on research preprint server
+- **Code**: Complete reproducibility package available
 
-Pattern: No pre-effects → Peak at +2 years → Sustained decline
-```
+### **🌍 International Relevance**
+**Framework applicable globally** to major metropolitan areas:
+- **🇩🇪 Germany**: Industry 4.0 and demographic transition
+- **🇰🇷 South Korea**: Digital New Deal and super-aging society  
+- **🇸🇬 Singapore**: Smart Nation initiatives
+- **🇺🇸 United States**: Regional AI hub development
 
-### **3. Heterogeneous Effects by Industry** 🏢
-- **High AI Readiness** (IT, Finance, Professional): **0.084** effect
-- **Medium AI Readiness** (Manufacturing, Healthcare): **0.041** effect  
-- **Low AI Readiness** (Retail, Hospitality, Transport): **0.012** effect
+### **🏆 Recognition**
+- **First causal analysis** of AI effects on spatial distribution
+- **Novel theoretical framework** extending New Economic Geography
+- **Comprehensive methodology** combining theory + empirics + ML
+- **Policy-relevant insights** for aging societies worldwide
 
-### **4. Long-term Projections (2024-2050)** 🔮
-- **Baseline Scenario**: Continued concentration in central Tokyo
-- **Optimistic AI Adoption**: 60-80% offset of aging effects
-- **Pessimistic Demographics**: 20% decline in agglomeration benefits
-- **Policy Interventions**: 15-30% improvement with targeted support
+---
 
-## 🛡️ **Rigorous Validation Framework**
+## 📊 **Interactive Features Preview**
 
-### **Robustness Tests (All Passed ✅)**
-1. **Parallel Trends Tests**: Pre-treatment trends parallel (p > 0.05)
-2. **Placebo Tests**: False positive rate 4.2% (below 5% threshold)
-3. **Sensitivity Analysis**: Effects robust across specifications
-4. **Bootstrap Inference**: Robust standard errors confirmed
-5. **Permutation Tests**: Treatment assignment significant (p = 0.008)
+### **🎮 Dashboard Capabilities**
+- **📍 Interactive Maps**: Click-to-explore Tokyo ward data
+- **📅 Time Controls**: Slide through 25 years of data
+- **🔧 Parameter Adjustment**: Modify scenarios in real-time
+- **📈 Dynamic Charts**: Auto-updating visualizations
+- **💾 Export Tools**: Download data, figures, reports
+- **📱 Mobile Responsive**: Works on all devices
 
-## 🌐 **Economic Interpretation & Policy**
+### **🔍 Analytical Tools**
+- **Scenario Builder**: Create custom future projections
+- **Policy Simulator**: Test intervention effectiveness
+- **Robustness Checker**: Validate findings across methods
+- **Data Explorer**: Dive deep into raw datasets
+- **Method Comparator**: Compare causal identification approaches
 
-### **Why AI Increases Agglomeration** 🧠
-1. **Knowledge Spillovers**: AI expertise requires tacit knowledge sharing
-2. **Complementary Assets**: Infrastructure, talent, institutions co-locate
-3. **Network Effects**: AI benefits from proximity to other adopters
-4. **Reduced Search Costs**: Digital platforms enhance local matching
+---
 
-### **Policy Implications** 🏛️
-#### **Spatial Planning**
-- Anticipate increased concentration in AI-ready areas
-- Invest in high-capacity digital infrastructure
-- Plan for demographic transition effects
+## 🛠️ **Technical Implementation**
 
-#### **Human Capital**  
-- AI education and retraining programs
-- Immigration policies for skilled workers
-- Lifelong learning initiatives
+### **🌐 Web Technologies**
+- **Frontend**: Plotly Dash + Bootstrap + Custom CSS
+- **Backend**: Python 3.9+ with advanced analytics
+- **Data**: Pandas + NumPy + Scikit-learn
+- **Visualization**: Plotly + Matplotlib + Seaborn
+- **Deployment**: Docker + GitHub Pages
 
-#### **Inclusive Growth**
-- Prevent excessive concentration excluding peripheral areas
-- Bridge digital divides
-- Support age-friendly workplace adaptation
+### **📊 Data Pipeline**
+- **Collection**: Automated data gathering from government sources
+- **Processing**: Advanced cleaning and validation procedures
+- **Analysis**: 5 causal methods + ML predictions + robustness tests
+- **Visualization**: Interactive dashboards + static publication figures
+- **Export**: Multiple formats (CSV, PNG, PDF, HTML)
 
-## 📊 **Output Gallery**
+---
 
-### **Data Generated (15+ datasets)**
-- `historical_population_by_age.csv` - 24-year demographic evolution
-- `temporal_concentration_indices.csv` - Time-varying agglomeration
-- `scenario_comparison.csv` - 27 future scenarios
-- `summary.csv` - Causal treatment effects
-- `robustness_tests.csv` - Comprehensive validation
+## 🎯 **Usage Scenarios**
 
-### **Visualizations (20+ charts/dashboards)**
-- `demographic_transition_animation.html` - Population aging evolution
-- `scenario_comparison_dashboard.html` - Interactive scenario explorer  
-- `event_study_plots.png` - Dynamic treatment effects
-- `robustness_dashboard.html` - Comprehensive validation tests
-- `causal_pathway_diagram.png` - Conceptual framework
+### **🎓 For Researchers**
+- **Explore methodology**: Understand causal identification approaches
+- **Replicate analysis**: Complete reproducibility package
+- **Extend framework**: Apply to other metropolitan areas
+- **Compare methods**: Validate against alternative approaches
 
-## 🌍 **Global Applications**
+### **🏛️ For Policymakers**
+- **Policy simulation**: Test intervention scenarios
+- **Evidence base**: Access rigorous causal evidence
+- **Long-term planning**: 25-year projection capabilities
+- **International comparison**: Learn from Tokyo experience
 
-### **Ready for International Use**
-- **Germany**: Industry 4.0 initiatives
-- **Singapore**: Smart Nation programs  
-- **South Korea**: Digital New Deal analysis
-- **United States**: Regional AI hub development
+### **🎓 For Students**
+- **Learn methods**: Interactive tutorials on causal inference
+- **Explore data**: Hands-on experience with real datasets  
+- **Understand theory**: Visual explanation of economic concepts
+- **Practice skills**: Reproducible analysis examples
 
-### **Adaptation Framework**
-```python
-# Country-specific configuration
-country_config = {
-    'demographic_data': load_country_demographics(country),
-    'policy_events': load_ai_policy_timeline(country),
-    'spatial_units': define_geographic_regions(country),
-    'industry_classification': map_local_industries(country)
-}
+---
 
-# Run adapted analysis
-results = run_integrated_analysis(country_config)
-```
+## 📞 **Support & Community**
 
-## 🎓 **Academic Contributions**
+### **💬 Get Help**
+- **📖 Documentation**: Comprehensive guides and tutorials
+- **🐛 Issues**: [GitHub Issues](https://github.com/Tatsuru-Kikuchi/MCP-gis/issues)
+- **💭 Discussions**: [GitHub Discussions](https://github.com/Tatsuru-Kikuchi/MCP-gis/discussions)
+- **📧 Email**: Direct contact for research collaboration
 
-### **Methodological Innovation**
-- **First causal analysis** of AI effects on agglomeration patterns
-- **Novel integration** of dynamic modeling with event study methodology
-- **Comprehensive robustness framework** for spatial policy evaluation
-- **Multi-method triangulation** for robust causal inference
+### **🤝 Contribute**
+- **🔬 Research**: Extend analysis to new contexts
+- **💻 Code**: Improve algorithms and visualizations
+- **📖 Documentation**: Enhance guides and tutorials
+- **🐛 Testing**: Help identify and fix issues
 
-### **Empirical Findings**
-- **Causal evidence** of AI's spatial concentration effects
-- **Dynamic patterns** of technology adoption impacts
-- **Demographic transition** interactions with agglomeration
-- **Policy-relevant magnitudes** for intervention design
-
-### **Global Relevance**
-- **Aging society framework** applicable worldwide
-- **Technology adoption methodology** transferable across contexts
-- **Evidence-based urban planning** tools for policy makers
-- **Integration template** for dynamic + causal analysis
-
-## 📚 **Documentation & Tutorials**
-
-| Resource | Description | Level |
-|----------|-------------|-------|
-| 📖 [**README_ANALYSIS.md**](README_ANALYSIS.md) | Original static analysis guide | Beginner |
-| 📖 [**README_DYNAMIC.md**](README_DYNAMIC.md) | Dynamic analysis framework | Intermediate |
-| 📖 [**README_CAUSAL.md**](README_CAUSAL.md) | Causal inference methodology | Advanced |
-| 🔗 [**INTEGRATION_GUIDE.md**](INTEGRATION_GUIDE.md) | Framework integration | Expert |
-| 📄 [**academic_paper.tex**](academic_paper.tex) | LaTeX research paper | Academic |
-
-## 🏆 **Citation**
-
-If you use this framework in your research, please cite:
-
+### **🏆 Citation**
 ```bibtex
-@software{tokyo_dynamic_causal_agglomeration,
-  title={Tokyo Productivity Agglomeration Analysis: Dynamic and Causal Framework},
-  author={Tatsuru Kikuchi et al.},
+@software{kikuchi2025ai_spatial,
+  title={AI-Driven Spatial Distribution Dynamics: Interactive Research Platform},
+  author={Kikuchi, Tatsuru and collaborators},
   year={2025},
   url={https://github.com/Tatsuru-Kikuchi/MCP-gis},
-  note={First comprehensive framework integrating dynamic modeling with causal inference for agglomeration analysis}
+  note={Interactive research platform with comprehensive dashboards}
 }
 ```
-
-## 🤝 **Contributing**
-
-We welcome contributions across all analytical layers:
-
-### **Research Collaboration**
-- **International Validation**: Apply framework to other cities
-- **Method Development**: Contribute new analytical techniques
-- **Data Integration**: Connect real government data sources
-- **Policy Application**: Test interventions and evaluate outcomes
-
-### **Technical Contributions**  
-- **Algorithm Enhancement**: Improve ML models and estimation procedures
-- **Visualization Tools**: Create new interactive dashboard components
-- **Performance Optimization**: Scale analysis to larger datasets
-- **Documentation**: Enhance guides and tutorials
-
-## 📧 **Contact & Support**
-
-- 🐛 **Issues**: [GitHub Issues](https://github.com/Tatsuru-Kikuchi/MCP-gis/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/Tatsuru-Kikuchi/MCP-gis/discussions)
-- 🎓 **Research Collaboration**: [Contact Form](mailto:research@example.com)
-- 📖 **Documentation**: Comprehensive guides included
 
 ---
 
 <div align="center">
 
-**🌟 Revolutionary Framework for Urban Economics in the AI Age 🤖**
+## 🌟 **Transform Your Understanding of AI Spatial Economics**
 
-*First comprehensive integration of dynamic modeling with rigorous causal inference for agglomeration analysis*
+**[🚀 Launch Interactive Dashboard](https://tatsuru-kikuchi.github.io/MCP-gis/dashboard/)** | **[📊 Explore Results](https://tatsuru-kikuchi.github.io/MCP-gis/results/)** | **[🔮 Future Scenarios](https://tatsuru-kikuchi.github.io/MCP-gis/predictions/)**
 
-[⭐ **Star this breakthrough**](https://github.com/Tatsuru-Kikuchi/MCP-gis/stargazers) | [🔀 **Fork for your research**](https://github.com/Tatsuru-Kikuchi/MCP-gis/fork) | [🤝 **Contribute**](https://github.com/Tatsuru-Kikuchi/MCP-gis/pulls)
+### **🎯 Ready to Explore?**
 
-**"The future of spatial economics: Where prediction meets causation" - Urban Economics Journal**
+[![Dashboard](https://img.shields.io/badge/🌐-Launch%20Dashboard-brightgreen?style=for-the-badge)](https://tatsuru-kikuchi.github.io/MCP-gis/dashboard/)
+[![Results](https://img.shields.io/badge/📊-View%20Results-blue?style=for-the-badge)](https://tatsuru-kikuchi.github.io/MCP-gis/results/)
+[![Documentation](https://img.shields.io/badge/📖-Read%20Docs-orange?style=for-the-badge)](docs/)
+
+**"Where cutting-edge research meets interactive exploration"**
+
+*First comprehensive platform for AI spatial economics with full reproducibility and interactive dashboards*
+
+⭐ **Star this repository** | 🔀 **Fork for your research** | 🤝 **Contribute to the project**
 
 </div>
+
+---
+
+**📊 Repository Stats**: ![GitHub stars](https://img.shields.io/github/stars/Tatsuru-Kikuchi/MCP-gis) ![GitHub forks](https://img.shields.io/github/forks/Tatsuru-Kikuchi/MCP-gis) ![GitHub issues](https://img.shields.io/github/issues/Tatsuru-Kikuchi/MCP-gis) ![GitHub license](https://img.shields.io/github/license/Tatsuru-Kikuchi/MCP-gis)
+
+**🕒 Last Updated**: January 2025 | **📄 Status**: Active Development | **🎓 Paper**: Under Review at Journal of Urban Economics
