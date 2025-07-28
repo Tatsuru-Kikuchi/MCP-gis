@@ -1,1 +1,262 @@
-# AI-Driven Spatial Distribution Research Hub 🏙️🤖📊\n\n> **Comprehensive Research Platform: Interactive Dashboards, Theoretical Framework, and Empirical Analysis of AI Implementation Effects on Spatial Economic Patterns in Japan's Aging Society**\n\n[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://python.org)\n[![GitHub Pages](https://img.shields.io/badge/Dashboards-Live-brightgreen.svg)](https://tatsuru-kikuchi.github.io/MCP-gis/)\n[![JUE](https://img.shields.io/badge/Journal-Under%20Review-orange.svg)](https://www.sciencedirect.com/journal/journal-of-urban-economics)\n[![GitHub Stars](https://img.shields.io/github/stars/Tatsuru-Kikuchi/MCP-gis.svg)](https://github.com/Tatsuru-Kikuchi/MCP-gis/stargazers)\n[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)\n\n---\n\n## 🌟 **Interactive Research Dashboards**\n\n**🚀 [Launch Main Research Dashboard](https://tatsuru-kikuchi.github.io/MCP-gis/)** - Comprehensive interactive exploration of all research findings\n\n| 📊 Dashboard | 🎯 Purpose | 🔗 Access | 📱 Features |\n|-------------|-----------|---------|------------|\n| **[🏠 Research Overview](https://tatsuru-kikuchi.github.io/MCP-gis/overview.html)** | Executive summary and key findings | [Launch →](https://tatsuru-kikuchi.github.io/MCP-gis/overview.html) | Interactive KPIs, Summary charts |\n| **[👥 Demographic Analysis](https://tatsuru-kikuchi.github.io/MCP-gis/demographics.html)** | Population aging and workforce trends | [Launch →](https://tatsuru-kikuchi.github.io/MCP-gis/demographics.html) | Timeline sliders, Ward-level maps |\n| **[🏢 Spatial Patterns](https://tatsuru-kikuchi.github.io/MCP-gis/spatial.html)** | Agglomeration and concentration analysis | [Launch →](https://tatsuru-kikuchi.github.io/MCP-gis/spatial.html) | Interactive maps, Industry filters |\n| **[🎯 Causal Inference](https://tatsuru-kikuchi.github.io/MCP-gis/causal.html)** | Treatment effects and robustness tests | [Launch →](https://tatsuru-kikuchi.github.io/MCP-gis/causal.html) | Method comparison, Event studies |\n| **[🔮 Future Projections](https://tatsuru-kikuchi.github.io/MCP-gis/predictions.html)** | Long-term scenarios (2024-2050) | [Launch →](https://tatsuru-kikuchi.github.io/MCP-gis/predictions.html) | Scenario builder, Policy simulator |\n| **[📊 Results Explorer](https://tatsuru-kikuchi.github.io/MCP-gis/results.html)** | Complete analysis results | [Launch →](https://tatsuru-kikuchi.github.io/MCP-gis/results.html) | Data export, Figure gallery |\n\n---\n\n## 🎯 **Research Innovation & Contributions**\n\n### **🔬 Novel Theoretical Framework**\nFirst comprehensive integration of **AI-specific mechanisms** into New Economic Geography theory:\n- **Algorithmic Learning Spillovers** - Knowledge transmission through AI systems\n- **Digital Infrastructure Returns** - Increasing returns to digital investment\n- **Virtual Agglomeration Effects** - Remote collaboration reducing distance constraints\n- **AI-Human Complementarity** - Productivity gains from human-AI collaboration  \n- **Network Externalities** - Multiplicative benefits from AI adoption networks\n\n### **📈 Rigorous Empirical Validation**\n**Five causal identification methods** providing robust evidence:\n- **Difference-in-Differences**: 0.045 treatment effect (p=0.005)\n- **Event Study Analysis**: Dynamic effects with parallel trends validation\n- **Synthetic Control**: Counterfactual construction for causal inference\n- **Instrumental Variables**: Addressing endogeneity concerns\n- **Propensity Score Matching**: Controlling for selection bias\n\n### **🔮 Predictive Analytics**\n**25-year projections (2024-2050)** across multiple scenarios:\n- **Machine learning ensemble** with R² = 0.76-0.89\n- **27 scenario combinations** (AI adoption × Policy × Demographics)\n- **Policy intervention simulations** for strategic planning\n\n---\n\n## 🏆 **Key Research Findings**\n\n<div align=\"center\">\n\n| 💡 **Finding** | 📊 **Evidence** | 🌍 **Implication** |\n|:-------------:|:-------------:|:-----------------:|\n| **AI Causal Impact** | 4.2-5.2 pp ↑ agglomeration | Significant spatial concentration |\n| **Industry Heterogeneity** | 8.4pp (high-AI) vs 1.2pp (low-AI) | Targeted policy needed |\n| **Long-term Potential** | 60-80% offset of aging effects | Strategic AI adoption crucial |\n| **Policy Effectiveness** | 15-30% improvement possible | Evidence-based interventions work |\n\n</div>\n\n---\n\n## 🚀 **Quick Start Options**\n\n### **🌐 Option 1: Interactive Dashboards (Recommended)**\n```bash\n# No installation required - web-based dashboards\n🔗 Visit: https://tatsuru-kikuchi.github.io/MCP-gis/\n📱 Mobile-friendly interface\n🎮 Interactive exploration of all findings\n💾 Export capabilities for data and figures\n```\n\n### **🖥️ Option 2: Local Analysis**\n```bash\n# Clone and run locally\ngit clone https://github.com/Tatsuru-Kikuchi/MCP-gis.git\ncd MCP-gis\n\n# Install dependencies\npip install -r requirements.txt\n\n# Run master organizer (executes all analyses)\npython script/master_repository_organizer.py\n\n# Or run specific analysis\npython script/complete_manuscript_figures.py\n```\n\n### **🐳 Option 3: Docker Deployment**\n```bash\n# One-command deployment\ndocker-compose up -d\n\n# Access at http://localhost:8050\n# Includes all analysis tools and dashboards\n```\n\n---\n\n## 📁 **Repository Structure**\n\n```\nMCP-gis/\n├── 🌐 docs/                          # 📱 Interactive Web Dashboards\n│   ├── index.html                     # Main landing page\n│   ├── overview.html                  # Research overview dashboard\n│   ├── demographics.html              # Demographics analysis\n│   ├── spatial.html                   # Spatial analysis dashboard\n│   ├── causal.html                    # Causal inference dashboard\n│   ├── predictions.html               # Future predictions dashboard\n│   └── results.html                   # Results explorer\n│\n├── 📚 manuscript_optimized/           # 📖 Publication Outputs\n│   ├── figures/                       # Publication-ready figures\n│   ├── tables/                        # Results tables (CSV/LaTeX/Excel)\n│   ├── EXECUTION_SUMMARY.json         # Structured analysis summary\n│   └── EXECUTION_REPORT.md            # Detailed methodology report\n│\n├── 🎨 visualizations/                 # 📈 Working Visualizations\n│   └── manuscript/                    # 🎯 MAIN FIGURE LOCATION\n│       ├── fig1_demographic_effects.png\n│       ├── fig2_event_study.png\n│       ├── fig3_causal_effects.png\n│       ├── fig4_heterogeneous_effects.png\n│       ├── fig5_scenario_predictions.png\n│       ├── fig6_theoretical_framework.png\n│       ├── fig7_ai_mechanisms.png\n│       └── fig8_network_analysis.png\n│\n├── 🔬 script/                         # 💻 Analysis Scripts\n│   ├── master_repository_organizer.py # 🚀 Master execution script\n│   ├── causal_analysis_main.py        # Causal inference analysis\n│   ├── complete_manuscript_figures.py # Figure generation\n│   ├── complete_integration_script.py # Comprehensive analysis\n│   ├── enhanced_dynamic_analysis.py   # Dynamic analysis\n│   └── [7 more analysis scripts]\n│\n├── 📊 results/                        # 📋 Analysis Results\n│   ├── theoretical_results.json       # Theoretical validation\n│   ├── causal_analysis_results.json   # Causal inference results\n│   ├── predictions_results.json       # ML prediction results\n│   └── robustness_test_results.json   # Robustness test outcomes\n│\n├── 📂 data/                          # 📊 Input Data\n├── ⚡ .cache/                        # 🚀 Performance Cache\n├── 📝 logs/                          # 📋 Execution Logs\n└── ⚙️ config/                        # 🔧 Configuration Files\n```\n\n---\n\n## 🎓 **Academic Impact & Recognition**\n\n### **📚 Publication Status**\n- **Journal**: Journal of Urban Economics (Under Review)\n- **Preprint**: Available on research repository\n- **Code & Data**: Complete reproducibility package available\n- **Web Platform**: Interactive dashboards for broad accessibility\n\n### **🌍 International Relevance**\n**Framework applicable globally** to major metropolitan areas:\n- **🇩🇪 Germany**: Industry 4.0 and demographic transition\n- **🇰🇷 South Korea**: Digital New Deal and super-aging society  \n- **🇸🇬 Singapore**: Smart Nation initiatives\n- **🇺🇸 United States**: Regional AI hub development\n\n### **🏆 Recognition**\n- **First causal analysis** of AI effects on spatial distribution\n- **Novel theoretical framework** extending New Economic Geography\n- **Comprehensive methodology** combining theory + empirics + ML\n- **Interactive platform** for policy-relevant insights\n\n---\n\n## 📊 **Interactive Features**\n\n### **🎮 Dashboard Capabilities**\n- **📍 Interactive Maps**: Click-to-explore Tokyo ward data\n- **📅 Time Controls**: Slide through 25 years of data\n- **🔧 Parameter Adjustment**: Modify scenarios in real-time\n- **📈 Dynamic Charts**: Auto-updating visualizations\n- **💾 Export Tools**: Download data, figures, reports\n- **📱 Mobile Responsive**: Works on all devices\n\n### **🔍 Analytical Tools**\n- **Scenario Builder**: Create custom future projections\n- **Policy Simulator**: Test intervention effectiveness\n- **Robustness Checker**: Validate findings across methods\n- **Data Explorer**: Dive deep into raw datasets\n- **Method Comparator**: Compare causal identification approaches\n\n---\n\n## 🛠️ **Technical Implementation**\n\n### **🌐 Web Technologies**\n- **Frontend**: HTML5 + Bootstrap 5 + JavaScript ES6\n- **Visualization**: Plotly.js for interactive charts\n- **Backend**: Python 3.9+ with advanced analytics\n- **Data Processing**: Pandas + NumPy + Scikit-learn\n- **Deployment**: GitHub Pages + Docker support\n\n### **📊 Analysis Pipeline**\n- **Data Collection**: Automated gathering from government sources\n- **Processing**: Advanced cleaning and validation procedures\n- **Analysis**: 5 causal methods + ML predictions + robustness tests\n- **Visualization**: Interactive dashboards + static publication figures\n- **Export**: Multiple formats (CSV, PNG, PDF, HTML, LaTeX)\n\n---\n\n## 🎯 **Usage Scenarios**\n\n### **🎓 For Researchers**\n- **Explore methodology**: Understand causal identification approaches\n- **Replicate analysis**: Complete reproducibility package\n- **Extend framework**: Apply to other metropolitan areas\n- **Interactive learning**: Web-based exploration of methods\n\n### **🏛️ For Policymakers**\n- **Policy simulation**: Test intervention scenarios interactively\n- **Evidence base**: Access rigorous causal evidence\n- **Long-term planning**: 25-year projection capabilities\n- **Intuitive interface**: No technical expertise required\n\n### **🎓 For Students**\n- **Learn methods**: Interactive tutorials on causal inference\n- **Explore data**: Hands-on experience with real datasets  \n- **Understand theory**: Visual explanation of economic concepts\n- **Practice skills**: Reproducible analysis examples\n\n---\n\n## 📞 **Support & Community**\n\n### **💬 Get Help**\n- **🌐 Interactive Dashboards**: [https://tatsuru-kikuchi.github.io/MCP-gis/](https://tatsuru-kikuchi.github.io/MCP-gis/)\n- **🐛 Issues**: [GitHub Issues](https://github.com/Tatsuru-Kikuchi/MCP-gis/issues)\n- **💭 Discussions**: [GitHub Discussions](https://github.com/Tatsuru-Kikuchi/MCP-gis/discussions)\n- **📧 Email**: Direct contact for research collaboration\n\n### **🤝 Contribute**\n- **🔬 Research**: Extend analysis to new contexts\n- **💻 Code**: Improve algorithms and visualizations\n- **📖 Documentation**: Enhance guides and tutorials\n- **🐛 Testing**: Help identify and fix issues\n\n### **🏆 Citation**\n```bibtex\n@software{kikuchi2025ai_spatial,\n  title={AI-Driven Spatial Distribution Research Hub: Interactive Analysis Platform},\n  author={Kikuchi, Tatsuru},\n  year={2025},\n  url={https://github.com/Tatsuru-Kikuchi/MCP-gis},\n  note={Interactive research platform with comprehensive dashboards}\n}\n```\n\n---\n\n## 🆕 **GitHub Pages Setup Instructions**\n\n### **Enable GitHub Pages (Required for Web Dashboards)**\n\n1. **Go to Repository Settings**\n   - Navigate to your repository: `https://github.com/Tatsuru-Kikuchi/MCP-gis`\n   - Click on the \"Settings\" tab\n\n2. **Configure Pages**\n   - Scroll down to \"Pages\" in the left sidebar\n   - Under \"Source\", select \"Deploy from a branch\"\n   - Choose \"main\" branch\n   - Select \"/docs\" folder\n   - Click \"Save\"\n\n3. **Access Your Dashboards**\n   - **Main Dashboard**: `https://tatsuru-kikuchi.github.io/MCP-gis/`\n   - **Overview**: `https://tatsuru-kikuchi.github.io/MCP-gis/overview.html`\n   - **All other dashboards** will be accessible from the main page\n\n4. **Note**: It may take a few minutes for GitHub Pages to deploy. You'll see a green checkmark when it's ready.\n\n---\n\n<div align=\"center\">\n\n## 🌟 **Transform Your Understanding of AI Spatial Economics**\n\n**[🚀 Launch Interactive Dashboard](https://tatsuru-kikuchi.github.io/MCP-gis/)** | **[📊 Explore Results](https://tatsuru-kikuchi.github.io/MCP-gis/results.html)** | **[🔮 Future Scenarios](https://tatsuru-kikuchi.github.io/MCP-gis/predictions.html)**\n\n### **🎯 Ready to Explore?**\n\n[![Dashboard](https://img.shields.io/badge/🌐-Launch%20Dashboard-brightgreen?style=for-the-badge)](https://tatsuru-kikuchi.github.io/MCP-gis/)\n[![Results](https://img.shields.io/badge/📊-View%20Results-blue?style=for-the-badge)](https://tatsuru-kikuchi.github.io/MCP-gis/results.html)\n[![Overview](https://img.shields.io/badge/🏠-Research%20Overview-orange?style=for-the-badge)](https://tatsuru-kikuchi.github.io/MCP-gis/overview.html)\n\n**\"Where cutting-edge research meets interactive exploration\"**\n\n*Complete research platform combining rigorous empirical analysis with intuitive web-based exploration*\n\n⭐ **Star this repository** | 🔀 **Fork for your research** | 🤝 **Contribute to the project** | 🌐 **Try the dashboards**\n\n</div>\n\n---\n\n**📊 Repository Stats**: ![GitHub stars](https://img.shields.io/github/stars/Tatsuru-Kikuchi/MCP-gis) ![GitHub forks](https://img.shields.io/github/forks/Tatsuru-Kikuchi/MCP-gis) ![GitHub issues](https://img.shields.io/github/issues/Tatsuru-Kikuchi/MCP-gis) ![GitHub license](https://img.shields.io/github/license/Tatsuru-Kikuchi/MCP-gis)\n\n**🚀 Quick Access**: [Web Dashboards](https://tatsuru-kikuchi.github.io/MCP-gis/) | [Figures](visualizations/manuscript/) | [Scripts](script/) | [Results](results/) | [Reports](manuscript_optimized/)\n\n**📧 Contact**: [GitHub Issues](https://github.com/Tatsuru-Kikuchi/MCP-gis/issues) | **🔄 Status**: Active Development | **📄 Paper**: Under Review at Journal of Urban Economics"
+# AI-Driven Spatial Distribution Research 🏙️🤖📊
+
+> **Comprehensive research platform analyzing AI implementation effects on spatial economic patterns in Japan's aging society through rigorous causal inference methods**
+
+[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://python.org)
+[![Web Dashboard](https://img.shields.io/badge/Dashboard-Live-brightgreen.svg)](https://tatsuru-kikuchi.github.io/MCP-gis/)
+[![JUE](https://img.shields.io/badge/Journal-Under%20Review-orange.svg)](https://www.sciencedirect.com/journal/journal-of-urban-economics)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+---
+
+## 🌟 **Access Options**
+
+### **🌐 Option 1: Web Dashboard (Quick Access)**
+**📱 [View Research Presentation](https://tatsuru-kikuchi.github.io/MCP-gis/)**
+- Executive summary and key findings
+- Visual overview of methodology and results
+- Mobile-friendly interface
+- No installation required
+
+### **🔬 Option 2: Interactive Analysis (Full Research Platform)**
+```bash
+# Clone repository and run locally for complete analysis
+git clone https://github.com/Tatsuru-Kikuchi/MCP-gis.git
+cd MCP-gis
+
+# Install dependencies
+pip install -r requirements_dashboard.txt
+
+# Launch interactive Streamlit dashboard
+streamlit run web_dashboard/app.py
+```
+
+**🎯 Local Dashboard Features:**
+- Interactive data exploration
+- Live parameter adjustment
+- Complete methodology access
+- Full dataset analysis
+- Export capabilities
+
+---
+
+## 🎯 **Research Innovation & Contributions**
+
+### **🔬 Novel Theoretical Framework**
+First comprehensive integration of **AI-specific mechanisms** into New Economic Geography theory:
+- **Algorithmic Learning Spillovers** - Knowledge transmission through AI systems
+- **Digital Infrastructure Returns** - Increasing returns to digital investment
+- **Virtual Agglomeration Effects** - Remote collaboration reducing distance constraints
+- **AI-Human Complementarity** - Productivity gains from human-AI collaboration  
+- **Network Externalities** - Multiplicative benefits from AI adoption networks
+
+### **📈 Rigorous Empirical Validation**
+**Five causal identification methods** providing robust evidence:
+- **Difference-in-Differences**: 0.045 treatment effect (p=0.005)
+- **Event Study Analysis**: Dynamic effects with parallel trends validation
+- **Synthetic Control**: Counterfactual construction for causal inference
+- **Instrumental Variables**: Addressing endogeneity concerns
+- **Propensity Score Matching**: Controlling for selection bias
+
+### **🔮 Predictive Analytics**
+**25-year projections (2024-2050)** across multiple scenarios:
+- **Machine learning ensemble** with R² = 0.76-0.89
+- **27 scenario combinations** (AI adoption × Policy × Demographics)
+- **Policy intervention simulations** for strategic planning
+
+---
+
+## 🏆 **Key Research Findings**
+
+<div align="center">
+
+| 💡 **Finding** | 📊 **Evidence** | 🌍 **Implication** |
+|:-------------:|:-------------:|:-----------------:|
+| **AI Causal Impact** | 4.2-5.2 pp ↑ agglomeration | Significant spatial concentration |
+| **Industry Heterogeneity** | 8.4pp (high-AI) vs 1.2pp (low-AI) | Targeted policy needed |
+| **Long-term Potential** | 60-80% offset of aging effects | Strategic AI adoption crucial |
+| **Policy Effectiveness** | 15-30% improvement possible | Evidence-based interventions work |
+
+</div>
+
+---
+
+## 🚀 **Quick Start Guide**
+
+### **🎯 For Researchers & Students**
+1. **Explore Web Overview**: [Research Dashboard](https://tatsuru-kikuchi.github.io/MCP-gis/)
+2. **Download Repository**: `git clone https://github.com/Tatsuru-Kikuchi/MCP-gis.git`
+3. **Run Master Analysis**: `python script/master_repository_organizer.py`
+4. **Launch Interactive Dashboard**: `streamlit run web_dashboard/app.py`
+
+### **🏛️ For Policymakers**
+1. **Review Key Findings**: [Web Dashboard](https://tatsuru-kikuchi.github.io/MCP-gis/)
+2. **Explore Policy Scenarios**: Run local dashboard for interactive simulations
+3. **Access Results**: Download complete analysis from `results/` folder
+
+### **🐳 Docker Deployment**
+```bash
+# One-command deployment
+docker-compose up -d
+# Access at http://localhost:8050
+```
+
+---
+
+## 📁 **Repository Structure**
+
+```
+MCP-gis/
+├── 🌐 docs/                          # 📱 GitHub Pages Web Presentation
+│   ├── index.html                     # Research overview (static)
+│   └── [additional presentation pages]
+│
+├── 🎛️ web_dashboard/                  # 🔬 Interactive Research Platform
+│   └── app.py                         # Full Streamlit dashboard (local)
+│
+├── 📚 manuscript_optimized/           # 📖 Publication Outputs
+│   ├── figures/                       # Publication-ready figures
+│   ├── tables/                        # Results tables (CSV/LaTeX/Excel)
+│   ├── EXECUTION_SUMMARY.json         # Structured analysis summary
+│   └── EXECUTION_REPORT.md            # Detailed methodology report
+│
+├── 🎨 visualizations/                 # 📈 Research Visualizations
+│   └── manuscript/                    # 🎯 MAIN FIGURE LOCATION
+│       ├── fig1_demographic_effects.png
+│       ├── fig2_event_study.png
+│       ├── fig3_causal_effects.png
+│       ├── fig4_heterogeneous_effects.png
+│       ├── fig5_scenario_predictions.png
+│       ├── fig6_theoretical_framework.png
+│       ├── fig7_ai_mechanisms.png
+│       └── fig8_network_analysis.png
+│
+├── 🔬 script/                         # 💻 Analysis Scripts
+│   ├── master_repository_organizer.py # 🚀 Master execution script
+│   ├── causal_analysis_main.py        # Causal inference analysis
+│   ├── complete_manuscript_figures.py # Figure generation
+│   └── [additional analysis scripts]
+│
+├── 📊 results/                        # 📋 Analysis Results
+│   ├── theoretical_results.json       # Theoretical validation
+│   ├── causal_analysis_results.json   # Causal inference results
+│   ├── predictions_results.json       # ML prediction results
+│   └── robustness_test_results.json   # Robustness test outcomes
+│
+├── 📂 data/                          # 📊 Input Data
+├── ⚡ .cache/                        # 🚀 Performance Cache
+├── 📝 logs/                          # 📋 Execution Logs
+└── ⚙️ config/                        # 🔧 Configuration Files
+```
+
+---
+
+## 🎓 **Academic Impact & Recognition**
+
+### **📚 Publication Status**
+- **Journal**: Journal of Urban Economics (Under Review)
+- **Code & Data**: Complete reproducibility package available
+- **Interactive Platform**: Web presentation + local analysis tools
+
+### **🌍 International Relevance**
+**Framework applicable globally** to major metropolitan areas:
+- **🇩🇪 Germany**: Industry 4.0 and demographic transition
+- **🇰🇷 South Korea**: Digital New Deal and super-aging society  
+- **🇸🇬 Singapore**: Smart Nation initiatives
+- **🇺🇸 United States**: Regional AI hub development
+
+### **🏆 Research Recognition**
+- **First causal analysis** of AI effects on spatial distribution
+- **Novel theoretical framework** extending New Economic Geography
+- **Comprehensive methodology** combining theory + empirics + ML
+- **Dual-access platform** for broad accessibility
+
+---
+
+## 🛠️ **Technical Implementation**
+
+### **🌐 Web Presentation (docs/)**
+- **Static HTML/CSS/JavaScript** for broad accessibility
+- **Mobile responsive** design
+- **Fast loading** for quick overview
+- **GitHub Pages** deployment
+
+### **🔬 Interactive Analysis (web_dashboard/)**
+- **Python Streamlit** for full functionality
+- **Real-time parameter adjustment**
+- **Complete dataset access**
+- **Export capabilities**
+
+### **📊 Analysis Pipeline**
+- **Data Collection**: Automated gathering from government sources
+- **Processing**: Advanced cleaning and validation procedures
+- **Analysis**: 5 causal methods + ML predictions + robustness tests
+- **Visualization**: Interactive dashboards + static figures
+- **Export**: Multiple formats (CSV, PNG, PDF, HTML, LaTeX)
+
+---
+
+## 🎯 **Usage Scenarios**
+
+### **🎓 For Researchers**
+- **Quick Overview**: Web dashboard for initial exploration
+- **Deep Dive**: Local Streamlit app for complete analysis
+- **Replication**: All code and data provided
+- **Extension**: Framework adaptable to other contexts
+
+### **🏛️ For Policymakers**
+- **Executive Summary**: Web dashboard key findings
+- **Policy Simulation**: Local app for scenario testing
+- **Evidence Base**: Access to rigorous causal evidence
+- **Long-term Planning**: 25-year projection capabilities
+
+---
+
+## 📞 **Support & Community**
+
+### **💬 Get Help**
+- **🌐 Web Overview**: [https://tatsuru-kikuchi.github.io/MCP-gis/](https://tatsuru-kikuchi.github.io/MCP-gis/)
+- **🐛 Issues**: [GitHub Issues](https://github.com/Tatsuru-Kikuchi/MCP-gis/issues)
+- **💭 Discussions**: [GitHub Discussions](https://github.com/Tatsuru-Kikuchi/MCP-gis/discussions)
+- **📧 Research Collaboration**: Contact via GitHub
+
+### **🏆 Citation**
+```bibtex
+@software{kikuchi2025ai_spatial,
+  title={AI-Driven Spatial Distribution Research: Causal Analysis Platform},
+  author={Kikuchi, Tatsuru},
+  year={2025},
+  url={https://github.com/Tatsuru-Kikuchi/MCP-gis},
+  note={Research platform with dual-access: web presentation and interactive analysis}
+}
+```
+
+---
+
+<div align="center">
+
+## 🌟 **Explore AI Spatial Economics Research**
+
+**[🌐 Web Overview](https://tatsuru-kikuchi.github.io/MCP-gis/)** | **[🔬 Local Analysis](web_dashboard/)** | **[📊 Results](results/)** | **[📈 Figures](visualizations/manuscript/)**
+
+### **🎯 Choose Your Access Level**
+
+[![Web Dashboard](https://img.shields.io/badge/🌐-Web%20Overview-brightgreen?style=for-the-badge)](https://tatsuru-kikuchi.github.io/MCP-gis/)
+[![Local Analysis](https://img.shields.io/badge/🔬-Interactive%20Analysis-blue?style=for-the-badge)](web_dashboard/)
+[![Results](https://img.shields.io/badge/📊-View%20Results-orange?style=for-the-badge)](results/)
+
+**"Rigorous research meets accessible presentation"**
+
+*Complete research platform combining causal inference rigor with intuitive exploration*
+
+⭐ **Star this repository** | 🔀 **Fork for your research** | 🤝 **Contribute to the project**
+
+</div>
+
+---
+
+**📊 Repository Stats**: ![GitHub stars](https://img.shields.io/github/stars/Tatsuru-Kikuchi/MCP-gis) ![GitHub forks](https://img.shields.io/github/forks/Tatsuru-Kikuchi/MCP-gis) ![GitHub issues](https://img.shields.io/github/issues/Tatsuru-Kikuchi/MCP-gis)
+
+**🚀 Quick Access**: [Web Dashboard](https://tatsuru-kikuchi.github.io/MCP-gis/) | [Local App](web_dashboard/) | [Figures](visualizations/manuscript/) | [Scripts](script/) | [Results](results/)
+
+**📧 Contact**: [GitHub Issues](https://github.com/Tatsuru-Kikuchi/MCP-gis/issues) | **🔄 Status**: Active Development | **📄 Paper**: Under Review at Journal of Urban Economics
