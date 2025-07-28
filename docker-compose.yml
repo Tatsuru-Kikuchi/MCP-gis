@@ -1,0 +1,33 @@
+# AI-Driven Spatial Distribution Analysis
+# Complete deployment configuration with Docker support
+
+version: '3.8'
+
+services:
+  dashboard:
+    build: .
+    ports:
+      - "8050:8050"
+    environment:
+      - DASH_DEBUG=False
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./data:/app/data
+      - ./results:/app/results
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8050"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Optional: Add Redis for caching (uncomment if needed)
+  # redis:
+  #   image: redis:7-alpine
+  #   ports:
+  #     - "6379:6379"
+  #   restart: unless-stopped
+
+networks:
+  default:
+    name: ai-spatial-network
